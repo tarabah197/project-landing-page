@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1F2937;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.5;
+}
+
+.navbar {
+    height: 5%;
+    color: #fff;
+    
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.navbar a{
+    text-decoration: none;
+    color:#fff;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav {
+    display: flex;
+}
