@@ -11,7 +11,10 @@ body {
     font-family: "Roboto", sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    
+}
+
+img {
+    max-width: 100%;
 }
 
 .container {
@@ -34,7 +37,7 @@ button {
 /* NAVBAR */
 
 .navbar {
-    height: 5vh;
+    height: 50px;
     color: #fed7a5;
 }
 
@@ -72,35 +75,31 @@ ul {
 /* HEADER */
 
 .header {
-    height: 50vh;
+    display: flex;
+    align-items: center;
+    min-height: 400px;
 }
 
-header .container {
+.header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 100px;
-    height: 100%;
 }
-
 
 .content h1 {
     font-size: 48px;
+    font-weight: bold;
+    line-height: 1,2;
 }
 
-.container.content {
-    color:#fed7a5;
-    flex: 1;
-}
-
-.container img {
+.container>img {
     border-radius: 550px 0; 
-    max-width: 50%;
-    max-height: 70%;
+    max-width: 400px;
     box-shadow: 8px 8px rgba(83, 65, 69, 0.267);
 }
 
-.container button {
+.header .sing-up {
     margin-top: 20px;
 }
 
@@ -117,9 +116,98 @@ header .container {
 
 /* CARD SECTION */
 
-section.cards {
-    height: 50vh;
+.cards {
+    min-height: 500px;
     background-color: #fed7a5;
     color: #20212b;
     text-align: center;
 }
+
+.cards h2 {
+    font-size: 36px;
+    font-weight: 900;
+    padding-top: 20px;
+}
+
+.cards .container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 0 300px;
+}
+
+.container .card {
+    flex: 1;
+    margin-top: 20px;
+}
+
+.card .box {
+    min-width: 80px;
+    min-height: 80px;
+    background: linear-gradient(-45deg, rgba(32,33,43,1) 0%, rgba(83,65,69,1) 35%, rgba(158,103,82,1) 100%);
+    border-radius: 25px;
+}
+
+.box>img {
+    padding: 25px;
+}
+
+/* USER QUOTE */
+
+.quote {
+    height: 400px;
+    background-color: #73766a;
+    font-size: 36px;
+    font-weight: lighter;
+}
+
+.quote .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0 300px;
+}
+
+.container i {
+    text-align: left;
+}
+
+.container b {
+    float: right;
+}
+
+/* CALL ACTION */
+
+.call-to-action {
+    background-color: #fed7a5;
+    color:#20212b;
+    height: 300px;
+}
+
+.call-to-action .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.wrapper {
+    background-color: #20212b;
+    color:#fed7a5;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
